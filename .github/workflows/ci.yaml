@@ -27,4 +27,4 @@ jobs:
     - name: Select Xcode
       run: sudo xcode-select -switch /Applications/XCode_11.4.app && /usr/bin/xcodebuild -version
     - name: Run unit tests
-      run: xcodebuild test -project CovidWatch.xcodeproj -scheme CovidWatchTests -destination 'platform=macOS, arch=x86_64, variant=Mac Catalyst, id=4203018E-580F-C1B5-9525-B745CECA79EB' | xcpretty && exit ${PIPESTATUS[0]}
+      run: xcodebuild test -project CovidWatch.xcodeproj -scheme CovidWatchTests -destination 'platform=macOS,arch=x86_64,variant=Mac Catalyst,id=4203018E-580F-C1B5-9525-B745CECA79EB' | xcpretty && exit ${PIPESTATUS[0]}
